@@ -14,12 +14,6 @@ article {
   height: 500px;
 }
 
-.Myfooter {
-    background-color: #777;
-    padding: 10px;
-    text-align: center;
-    color: white;
-  }
 
   @media (max-width: 600px) {
   nav, article {
