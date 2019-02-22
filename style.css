@@ -12,13 +12,15 @@ article {
   width: 80%;
   background-color: #f1f1f1;
   height: 500px;
+}
 
-  footer {
+.Myfooter {
     background-color: #777;
     padding: 10px;
     text-align: center;
     color: white;
   }
+
   @media (max-width: 600px) {
   nav, article {
     width: 100%;
