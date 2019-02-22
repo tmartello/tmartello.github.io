@@ -1,10 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Re-Vue</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+<title>Re-Vue</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: right;
+  width: 20%;
+  height: 500px; /* only for demonstration, should be removed */
+  background: #ccc;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 80%;
+  background-color: #f1f1f1;
+  height: 500px; /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
 </head>
 <body>
-<<<<<<< HEAD
 
 
 <header>
@@ -15,82 +69,58 @@
   <nav>
     <ul>
       <h4>TRENDING</h4>
-      <img src="https://cdn.images.express.co.uk/img/dynamic/143/590x/Google-game-console-LEAK-Google-plan-HUGE-rival-to-Sony-Playstation-and-Xbox-982766.jpg?r=1533127049240" align="center" width="200" height="100"  alt="Google console">
+      <img src="https://cdn.images.express.co.uk/img/dynamic/143/590x/Google-game-console-LEAK-Google-plan-HUGE-rival-to-Sony-Playstation-and-Xbox-982766.jpg?r=1533127049240" width="200" height="100"  alt="Google console">
       <li><a href="#">Google launches new console?</a></li>
       <img src="https://cdn.images.express.co.uk/img/dynamic/59/590x/Netflix-secret-option-1040031.jpg?r=1541175984046" align="center" width="200" height="100" alt="Netflix">
       <li><a href="#">New Netflix update causes major issues</a></li>
       <img src="https://static1.squarespace.com/static/54bdcba5e4b08f92b173441f/t/5bf0740c4ae237221b0fdb12/1542485015886/stan-lee-and-supes-7x4-1.jpg" align="center" width="200" height="100" alt="Stan Lee">
       <li><a href="#">Creator of Marvel Stan Lee dies at age 95</a></li>
     </ul>
-=======
-  <nav class="navbar navbar-inverse">
-    <div class="container-fluid">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand" href="#">Logo</a>
-      </div>
-      <div class="collapse navbar-collapse" id="myNavbar">
-        <ul class="nav navbar-nav">
-          <li class="active"><a href="#">Home</a></li>
-          <li><a href="#">Movies</a></li>
-          <li><a href="#">Shows</a></li>
-          <li><a href="#">Games</a></li>
-          <li><a href="#">Books</a></li>
-        </ul>
-        <ul class="nav navbar-nav navbar-right">
-          <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-        </ul>
-      </div>
-    </div>
->>>>>>> 23f29dafd8fffd35d35183a87e63608f267c97cd
   </nav>
-  <div class="container-fluid text-center">
-    <div class="row content">
-      <div class="col-sm-8 text-left">
-        <div class="jumbotron">
-          <h1><strong>Welcome to Re-Vue</strong></h1>
-          <p>Looking for that perfect Netflix show to binge watch? Or perhaps you seek the thrill of a horror film at 3 in the morning, to play the game adaptation on the same day? Whatever the case, Re-Vue has you sorted with reviews on games and films, TV shows along with trailers and walkthrough videos. Our aim is to provide you with updates on the latest entertainment and more!</p>
-          <hr>
-        </div>
-      </div>
-    </div>
-  </div>
+<article>
+    <h1>About</h1>
+    <p>Looking for the next TV series to binge watch on Netflix? Or seeking a hair raising thriller to keep you up all night?</p>
+    <p>Well, whatever the reason, Re-Vue has you covered with reviews on: Games, Films, TV shows and books! Click on the desired category and look through the options!</p>
+  </article>
+</section>
 
-  <div class="col-sm-2 sidenav">
-    <div class="well">
-      <p>ADS</p>
-    </div>
-    <div class="well">
-      <p>ADS</p>
-    </div>
-  </div>
+<footer>
+  <p>Follow us on social media to keep up to date with the latest news!</p>
+</footer>
+<<<<<<< HEAD
 
-  <footer class="container-fluid text-center">
-    <p>Footer Text</p>
-  </footer>
-  <div id="myCarousel" class="carousel slide" data-ride="carousel">
-    <!-- Indicators -->
-    <ol class="carousel-indicators">
-      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-      <li data-target="#myCarousel" data-slide-to="1"></li>
-      <li data-target="#myCarousel" data-slide-to="2"></li>
-    </ol>
-    <!-- Wrapper for slides -->
-    <div class="carousel-inner">
-      <div class="item active">
-        <img src="Images/https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIasucQDiNe5eJbGSUaCiEXaaMNH2ZAZTI4RxuURS0-05miJ4k.jpg" alt="Films">
-      </div>
-    </div>
-  </div>
-      <div class="item">
-        <img src="Images/image/jpeg;base64,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.jpg" alt="Books">
-      </div>
-      <div class="item">
-        <img src="Images/https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTILobjht55kXYVivtNLku_KnZmJHTzJVZiVTe1hAHVW0huIl0Ocw.jpg" alt="Games">
-      </div>
-    </body>
-    </html>
+=======
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+<!-- Indicators -->
+<ol class="carousel-indicators">
+<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+<li data-target="#myCarousel" data-slide-to="1"></li>
+<li data-target="#myCarousel" data-slide-to="2"></li>
+</ol>
+<!-- Wrapper for slides -->
+<div class="carousel-inner">
+<div class="item active">
+<<<<<<< HEAD
+  <img src="/https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIasucQDiNe5eJbGSUaCiEXaaMNH2ZAZTI4RxuURS0-05miJ4k.jpg" alt="Films" style="width:100%">
+=======
+  <img src="Images/film-carousel.jpg" alt="Films">
+>>>>>>> b1b8874b51ed94b664eddbea802318aac446ffb9
+</div>
+<div class="item">
+<<<<<<< HEAD
+  <img src="/https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQY25EPjG_qih2Le2Sa4rcxx5FmlQ0W-8geJAnMg9cDmf1y3vUE.jpg" alt="Books" style="width:100%">
+=======
+  <img src="Images/book-carousel.jpg" alt="Books">
+>>>>>>> b1b8874b51ed94b664eddbea802318aac446ffb9
+</div>
+<div class="item">
+<<<<<<< HEAD
+  <img src="/https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTILobjht55kXYVivtNLku_KnZmJHTzJVZiVTe1hAHVW0huIl0Ocw.jpg" alt="Games" style="width:100%">
+</div>
+=======
+  <img src="Images/game-carousel.jpg" alt="Games">
+>>>>>>> b1b8874b51ed94b664eddbea802318aac446ffb9
+</div>
+>>>>>>> 941af3870d4d572334e5a39c1042c4d6ebc479ee
+</body>
+</html>
