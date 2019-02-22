@@ -1,6 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+  <script type="text/javascript">
+  alert("Welcome");
+  </script>
 
 <title>Re-Vue</title>
 <meta charset="utf-8">
@@ -10,8 +15,13 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 <link rel="stylesheet" type="text/css" href="style.css">
 </head>
-</head>
 <body>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+  body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+  }
 
 <div class="topnav">
   <a class="active" href="#Re-Vue">Re-Vue</a>
@@ -20,36 +30,51 @@
   <a href="books.html">Books</a>
 </div>
 
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
 
+  .topnav a.active {
+    background-color: #008080;
+    color: white;
+  }
+  </style>
+  </head>
+  <body>
+
+  <div class="topnav">
+    <a class="active" href="#Re-Vue">Re-Vue</a>
+    <a href="#Movies/TV">Movies/TV</a>
+    <a href="#Games">Games</a>
+    <a href="#Books">Books</a>
+  </div>
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
 </style>
 </head>
 <body>
 
 
-<header>
-  <h2>Re-Vue</h2>
-</header>
-
 <section>
   <nav>
     <ul>
-        </nav> {
-
-        float: right;
-        width: 20%;
-        height: 500px;
-        background: #ccc;
-        padding: 20px;
-      }
       <h4>TRENDING</h4>
       <img src="https://cdn.images.express.co.uk/img/dynamic/143/590x/Google-game-console-LEAK-Google-plan-HUGE-rival-to-Sony-Playstation-and-Xbox-982766.jpg?r=1533127049240" width="200" height="100"  alt="Google console">
       <li><a href="#">Google launches new console?</a></li>
-      <img src="https://cdn.images.express.co.uk/img/dynamic/59/590x/Netflix-secret-option-1040031.jpg?r=1541175984046" align="center" width="200" height="100" alt="Netflix">
+      <img src="https://cdn.images.express.co.uk/img/dynamic/59/590x/Netflix-secret-option-1040031.jpg?r=1541175984046" = width="200" height="100" alt="Netflix">
       <li><a href="#">New Netflix update causes major issues</a></li>
-      <img src="https://static1.squarespace.com/static/54bdcba5e4b08f92b173441f/t/5bf0740c4ae237221b0fdb12/1542485015886/stan-lee-and-supes-7x4-1.jpg" align="center" width="200" height="100" alt="Stan Lee">
+      <img src="https://static1.squarespace.com/static/54bdcba5e4b08f92b173441f/t/5bf0740c4ae237221b0fdb12/1542485015886/stan-lee-and-supes-7x4-1.jpg" width="200" height="100" alt="Stan Lee">
       <li><a href="#">Creator of Marvel Stan Lee dies at age 95</a></li>
     </ul>
   </nav>
+</section>
 <article>
     <h1>About</h1>
     <p>Looking for the next TV series to binge watch on Netflix? Or seeking a hair raising thriller to keep you up all night?</p>
@@ -72,19 +97,16 @@
       <li data-target="#myCarousel" data-slide-to="1"></li>
       <li data-target="#myCarousel" data-slide-to="2"></li>
     </ol>
-
     <!-- Wrapper for slides -->
     <div class="carousel-inner">
       <div class="item active">
-        <img src="https://static.independent.co.uk/s3fs-public/thumbnails/image/2018/02/27/11/pile-of-books.jpg?w968h681" alt="Books" style="width:100%;">
+        <img src="/https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIasucQDiNe5eJbGSUaCiEXaaMNH2ZAZTI4RxuURS0-05miJ4k.jpg" alt="Films" style="width:100%">
       </div>
-
       <div class="item">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIasucQDiNe5eJbGSUaCiEXaaMNH2ZAZTI4RxuURS0-05miJ4k" alt="Films" style= "width:100%;">
+        <img src="/https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQY25EPjG_qih2Le2Sa4rcxx5FmlQ0W-8geJAnMg9cDmf1y3vUE.jpg" alt="Books" style="width:100%">
       </div>
-
       <div class="item">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTILobjht55kXYVivtNLku_KnZmJHTzJVZiVTe1hAHVW0huIl0Ocw" alt="Games" style="width:100%;">
+        <img src="/https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTILobjht55kXYVivtNLku_KnZmJHTzJVZiVTe1hAHVW0huIl0Ocw.jpg" alt="Games" style="width:100%">
       </div>
     </div>
 
@@ -100,11 +122,6 @@
   </div>
 </div>
 <nav>
-  <ul>
-    <li><a href="books.html">Books</a></li>
-    <li><a href="#">Films/TV</a></li>
-    <li><a href="#">Games</a></li>
-  </ul>
 </nav>
 </body>
 </html>
