@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<meta name="viewport" content="width=device-width, initial-scale=1">
 <html lang="en">
 <head>
   <link rel="stylesheet" type="text/css" href="style.css">
@@ -28,21 +27,71 @@
     color: black;
   }
 
-  .topnav a.active {
-    background-color: #008080;
-    color: white;
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: right;
+  width: 20%;
+  height: 500px; /* only for demonstration, should be removed */
+  background: #ccc;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 80%;
+  background-color: #f1f1f1;
+  height: 500px; /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
   }
+}
+</style>
+</head>
+<body>
 
-  </style>
-  </head>
-  <body>
+<header>
+    <h2>Re-Vue</h2>
+  </header>
 
-  <div class="topnav">
-    <a class="active" href="#Re-Vue">Re-Vue</a>
-    <a href="#Movies/TV">Movies/TV</a>
-    <a href="#Games">Games</a>
-    <a href="#Books">Books</a>
-  </div>
+  <section>
+    <nav>
+      <ul>
+        <h4>TRENDING</h4>
+        <img src="https://cdn.images.express.co.uk/img/dynamic/143/590x/Google-game-console-LEAK-Google-plan-HUGE-rival-to-Sony-Playstation-and-Xbox-982766.jpg?r=1533127049240" width="200" height="100"  alt="Google console">
+        <li><a href="#">Google launches new console?</a></li>
+        <img src="https://cdn.images.express.co.uk/img/dynamic/59/590x/Netflix-secret-option-1040031.jpg?r=1541175984046" align="center" width="200" height="100" alt="Netflix">
+        <li><a href="#">New Netflix update causes major issues</a></li>
+        <img src="https://static1.squarespace.com/static/54bdcba5e4b08f92b173441f/t/5bf0740c4ae237221b0fdb12/1542485015886/stan-lee-and-supes-7x4-1.jpg" align="center" width="200" height="100" alt="Stan Lee">
+        <li><a href="#">Creator of Marvel Stan Lee dies at age 95</a></li>
+      </ul>
+    </nav>
+    <article>
+      <h1>About</h1>
+      <p>Looking for the next TV series to binge watch on Netflix? Or seeking a hair raising thriller to keep you up all night?</p>
+      <p>Well, whatever the reason, Re-Vue has you covered with reviews on: Games, Films, TV shows and books! Click on the desired category and look through the options!</p>
+    </article>
+  </section>
 
 </style>
 </head>
